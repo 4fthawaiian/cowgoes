@@ -1,0 +1,12 @@
+{{#each animals}}
+
+{{#if speak}}
+<div id="{{ @key }}" style="float: left; text-align: center; background-image: url('/img/frame.png'); width: 275px; height: 240px; position: relative;">
+{{else}}
+<div onclick="document.location.href = '/animal/{{ @key }}/speak';" id="{{ @key }}" style="float: left; text-align: center; background-image: url('/img/frame.png'); width: 275px; height: 240px; position: relative;">
+{{/if}}
+
+  <img src="/img/animals/{{ @key }}.png" style="position: absolute; top: 0; bottom: 0; margin: auto; margin-left: -25%;" />
+</div>
+{{/each}}
+

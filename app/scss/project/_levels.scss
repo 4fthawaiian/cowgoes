@@ -1,0 +1,137 @@
+#levels {
+
+	.levels-select {
+        position: fixed;
+        border-bottom: 10px solid #454545;
+        top: 0;
+        left: 50%;
+        z-index: 100;
+        margin-left: -50%;
+        width: 100%;
+        background: #222222;
+
+    	.option {
+            position: relative;
+            z-index: 15;
+
+            .cover {
+                border: 3px solid #fff;
+                -webkit-border-radius: 8px;
+            }
+
+    		.shadow {
+                position:absolute;
+                bottom:-8px;
+                left:0;
+            }
+
+            .active {
+                -webkit-transition: linear 0.2s;
+                -webkit-transform:scale(1) translate3d(0,0,0);
+            }
+    	}
+
+    }
+
+    .levels-select .title {
+        background: #454545;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -100px;
+        width: 200px;
+        padding: 6px 0 0;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 28px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .cover-container {
+        position: relative;
+        padding-bottom: 32px;
+        @include clearfix();
+    }
+
+    .horizon {
+        background: #2c2c2c;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        height:150px;
+        width: 100%;
+        z-index:0;
+    }
+
+	.content {
+        color: #ffffff;
+        padding-top: 320px;
+        position: relative;
+        background: #222222;
+        height: 100%;
+        @include clearfix();
+
+
+        a {
+        	color: #fff;
+        }
+
+        .overlay-container {
+        	position: absolute;
+			width: 100%;
+			bottom: 0;
+			background: rgba(0,0,0,0.5);
+			padding: 12px;
+        }
+
+        .level {
+        	position:relative;
+        	margin-bottom: $rem-base * 3;
+        }
+
+        .level img.sketch {
+        	border: 3px solid #aaa;
+        }
+
+        .fav {
+	        position: absolute;
+	        top: 3px;
+	        left: 18px;
+	        background: #aaa;
+	        padding: 4px 6px;
+
+	        i {
+	        	opacity: 0.25;
+
+	        	&.active {
+	        		opacity: 1;
+	        	}
+	        }
+	    }
+
+	    .creator {
+	    	font-size: 12px;
+	    	margin-bottom: 4px;
+	    }
+
+	    .stats {
+	        margin-top:4px;
+
+	        strong {
+	        	font-size: 16px;
+	        }
+	    }
+
+	    .character {
+	        position: absolute;
+	        bottom:-20px;
+	        right:0;
+	        border-radius: 50%;
+	        border: 4px solid #ffffff;
+	        box-shadow: 0 0 6px rgba(0,0,0,0.25);
+	    }
+    }
+
+}

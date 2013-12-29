@@ -1,0 +1,16 @@
+.expand {
+
+	padding: $rem-base;
+	-webkit-transition: linear 0.2s;
+	-webkit-transform: scale(1) translate3d(0, 0, 0);
+
+	.cover {
+		-webkit-transition: linear 0.2s;
+    	-webkit-transform: scale(1) translate3d(0,0,0);
+
+    	&.active {
+    		-webkit-transition: linear 0.2s;
+    		-webkit-transform: scale(1) translate3d(0,0,0);
+    	}
+    }
+}

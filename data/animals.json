@@ -1,0 +1,10 @@
+{
+  "animals": {
+    "cow": { "says": "Moo!"},
+    "cat": { "says": "Meow!"},
+    "dog": { "says": "Woof!"},
+    "rooster": { "says": "Cock-a-doodle-doo!"},
+    "sheep": { "says": "Baaaaa!"},
+    "pig": { "says": "Oink!"}
+  }
+}
