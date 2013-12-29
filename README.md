@@ -1,4 +1,6 @@
-## PP Comm view test bed
+## cowgoes
+
+Test web app for unity+coherent webui - this is the web portion
 
 Setup:
 
