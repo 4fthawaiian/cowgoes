@@ -1,6 +1,4 @@
-## cowgoes
-
-Test web app for unity+coherent webui - this is the web portion
+## PP Comm view test bed
 
 Setup:
 
@@ -17,4 +15,15 @@ Also a good idea to have LiveReload chrome extension installed and running
 `grunt scaffold`
 
 `grunt`
+
+# Web Interface
+
+Once you've run `nodemon server.js` you should be able to access the index page at http://localhost:3000.
+
+# API
+
+The API is pretty simple. 
+
+Get all animals: `http://localhost:3000/v1/animals`
+Get a single animal: `http://localhost:3000/v1/animal/cow`
 
